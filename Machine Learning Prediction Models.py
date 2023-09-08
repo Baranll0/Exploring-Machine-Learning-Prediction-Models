@@ -59,7 +59,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
 
 #verileri okuma
-veriler = pd.read_csv("satislar.csv")
+veriler = pd.read_csv("datasets\satislar.csv")
 
 #verileri hazırlayalım
 aylar = veriler[['Aylar']]
@@ -94,7 +94,7 @@ plt.show()
 ## Çoklu Regresyon
 
 #veri okuma
-veriler = pd.read_csv("veriler.csv")
+veriler = pd.read_csv("datasets\veriler.csv")
 
 #kategorik->sayısal
 from sklearn import preprocessing
@@ -147,7 +147,7 @@ print(model.summary())
 
 ### Örnek yapalım ###
 
-veriler = pd.read_csv("odev_tenis.csv")
+veriler = pd.read_csv("datasets\odev_tenis.csv")
 
 #encoder: Kategorik->Numeric
 #label encoder
@@ -204,7 +204,7 @@ y_pred = regressor.predict(x_test)
 
 ##Polinomal Regresyon
 from sklearn.preprocessing import PolynomialFeatures
-veriler = pd.read_csv("maaslar.csv")
+veriler = pd.read_csv("datasets\maaslar.csv")
 #veri dilimleme(slice)
 x = veriler.iloc[:, 1:2]
 y = veriler.iloc[:, 2:]
@@ -240,7 +240,7 @@ plt.show()
 
 #Destek Vektör Regresyon
 #veriyi yükleyelim.
-veriler=pd.read_csv("maaslar.csv")
+veriler=pd.read_csv("datasets\maaslar.csv")
 
 #dataframe dilimleme (slice)
 x=veriler.iloc[:,1:2]
@@ -285,7 +285,7 @@ plt.show()
 ## Rassal Ağaçlar
 #veri yükleme
 
-veriler = pd.read_csv("maaslar.csv")
+veriler = pd.read_csv("datasets\maaslar.csv")
 
 #slice
 
@@ -321,7 +321,7 @@ Yöntemlerin başarılarını karşılaştıralım.
 """
 
 #veri yükleme
-veriler = pd.read_csv("yenimaaslar.csv")
+veriler = pd.read_csv("datasets\yenimaaslar.csv")
 
 #veri dilimleme
 x = veriler.iloc[:, 2:3]
